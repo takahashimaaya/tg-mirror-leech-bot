@@ -9,12 +9,12 @@ jobs:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
-          heroku_email: ${{secrets.HEROKU_EMAIL}}
+          heroku_api_key: 97bc53c8-2218-4d59-82bf-1fcc406de65a
+          heroku_app_name: iamtakahashimaaya
+          heroku_email: takahashimaaya@protonmail.com
           usedocker: true
           docker_heroku_process_type: web
           stack: "container"
           region: "us"
         env:
-          HD_CONFIG_FILE_URL: ${{secrets.CONFIG_FILE_URL}}
+          HD_CONFIG_FILE_URL: https://gist.githubusercontent.com/takahashimaaya/683c8b235bb2624f860bec87944648e1/raw/config.env
