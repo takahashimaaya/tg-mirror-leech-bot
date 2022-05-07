@@ -219,8 +219,8 @@ botcmds = [
 def main():
     # bot.set_my_commands(botcmds)
     start_cleanup()
-    if IS_VPS:
-        asyrun(start_server_async(PORT))
+    # if IS_VPS:
+        # asyrun(start_server_async(PORT))
     # Check if the bot is restarting
     if ospath.isfile(".restartmsg"):
         with open(".restartmsg") as f:
